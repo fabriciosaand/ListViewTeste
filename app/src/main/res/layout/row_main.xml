@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewMesAno"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Dezembro 2017"
+        android:layout_marginLeft="10sp"
+        android:textColor="#777"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10sp"/>
+
+    <TextView
+        android:id="@+id/textViewPagar"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="40sp"
+        android:maxLines="1"
+        android:text="PAGAR"
+        android:textColor="#f75008"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@+id/textViewMesAno"
+        app:layout_constraintStart_toEndOf="@+id/textViewMesAno" android:layout_marginStart="40sp"/>
+
+    <ImageView
+        android:id="@+id/imageViewOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPagar" android:layout_marginStart="50sp"/>
+
+
+</android.support.constraint.ConstraintLayout>
