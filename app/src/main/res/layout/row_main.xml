@@ -33,10 +33,12 @@
         android:id="@+id/imageViewOk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50sp"
-        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPagar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewPagar" android:layout_marginStart="50sp"/>
+        app:srcCompat="@android:drawable/checkbox_on_background" />
 
 
 </android.support.constraint.ConstraintLayout>

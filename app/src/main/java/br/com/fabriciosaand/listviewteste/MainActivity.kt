@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             val layoutInflater = LayoutInflater.from(context)
             var rowMain = layoutInflater.inflate(R.layout.row_main,viewGroup,false)
 
+            if(position % 2 == 0){
+                rowMain.setBackgroundColor(Color.parseColor("#e5ecdd"))
+            }
+
             val textViewMesAno = rowMain.findViewById<TextView>(R.id.textViewMesAno)
             val textViewPago = rowMain.findViewById<TextView>(R.id.textViewPagar)
             val imageViewStatus = rowMain.findViewById<ImageView>(R.id.imageViewOk)
