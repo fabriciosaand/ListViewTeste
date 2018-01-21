@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:text="Detalhamento"
         android:textStyle="bold"
-        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

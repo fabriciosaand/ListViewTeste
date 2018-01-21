@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         var listViewParcelas = findViewById<ListView>(R.id.listViewParcelas)
 
         listViewParcelas.adapter = CustomAdapter(this)
+
+        listViewParcelas.setOnItemClickListener { parent, view, position, id ->
+
+            Toast.makeText(this, "Position Clicked:$position",Toast.LENGTH_SHORT).show()
+        }
     }
 
     private class CustomAdapter(context: Context) : BaseAdapter(){
@@ -31,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         init {
             this.context = context
+            parcelas.add(Parcela("Janeiro 2000",false))
             for (i in 1..20){
                 parcelas.add(Parcela("Janeiro 20${i}",true))
             }
@@ -56,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getItem(position: Int): Any {
+
             return "TESTE"
         }
 
